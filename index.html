@@ -16,6 +16,8 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
     <link href="gdpr-cookie.css" rel="stylesheet" />
+    <link rel="stylesheet" href="menu.css">
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
@@ -30,20 +32,31 @@
       <img src="First page/first-page.png" alt="image" class="header_img" />
       <nav class="navbar all_title_width_wrapper all_title_width">
         <img src="First page/logo.png" alt="Logo" class="logo" />
-        <span class="material-symbols-outlined menu"> menu </span>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="item">
+          <li><a class="nav-item">ABOUT</a></li>
+          <li><a class="nav-item" href="#clients-section">CLIENT</a></li>
+          <li><a class="nav-item" href="#services-section">SERVICES</a></li>
+          <li><a class="nav-item" href="#casetudy-section">casestudy</a></li>
+          <li><a class="nav-item" href="#letstalk-section">lets_talk</a></li>
+        </ul>
+      </nav>
       </nav>
     </section>
     <div class="hero all_title_width all_title_width_wrapper">
       <div class="hero_body">
         <div class="tagline">
           <p class="tagline_quote">
-            Skyloom drives growth that reaches above the revenue stratosphere.
+            Skyloom drives growth<br> that reaches above the <br> revenue stratosphere.
           </p>
           <p class="second_tagline">
             We know a thing or two about growth marketing.
           </p>
         </div>
-        <img src="mouse_icon.png" class="mouse-icon" alt="mouse-icon" onclick="scrollToBottom()" />
         <div class="hanging_image_section">
           <img
             src="First page/first-page-astro.png"
@@ -53,9 +66,15 @@
         </div>
       </div>
     </div>
+<br>
+<br>
+
+<br>
+
+<br>
 
     <!-- Our Work  -->
-    <section class="our_work">
+    <section id="our-work" class="our_work">
       <div class="our_work_title">
         <span class="span1"> Our </span><span class="span2">Work</span>
       </div>
@@ -130,7 +149,7 @@
     <br>
     <br>
     <!-- Clients  -->
-    <section class="clients">
+    <section id="clients-section" class="clients">
       <div class="all_title_width_wrapper">
         <div class="title_row all_title_width margin_util margin_util">
           <p class="title">Clients</p>
@@ -169,7 +188,7 @@
     </section>
 
     <!-- Services  -->
-    <section class="services">
+    <section id="services-section" class="services">
       <div class="all_title_width_wrapper">
         <div class="title_row all_title_width margin_util">
           <p class="title">Services</p>
@@ -330,7 +349,7 @@
     </section>
 
     <!-- Let's talk  -->
-    <section class="lets_talk">
+    <section id="letstalk-section" class="lets_talk">
       <img
         src="Let's Talk and Footer Backkround.png"
         alt="Image"
@@ -434,27 +453,12 @@
       <section class="bottom_footer">
         <img src="First page/logo.png" alt="Logo" class="bottom_logo" />
         <div class="bottom_footer_logo">
-          <img
-            src="Social Icons/facebook.png"
-            class="each_bottom_footer_logo"
-            alt="Facebook"
-          />
-          <img
-            src="Social Icons/tiktok.png"
-            class="each_bottom_footer_logo"
-            alt="tiktok"
-          />
-          <img
-            src="Social Icons/linkedin.png"
-            class="each_bottom_footer_logo"
-            alt="linkedin"
-          />
-          <img
-            src="Social Icons/insta.png"
-            class="each_bottom_footer_logo"
-            alt="insta"
-          />
-        </div>
+          <div class="bottom_footer_logo">
+            <img src="Social Icons/facebook.png" class="each_bottom_footer_logo" alt="Facebook" />
+            <img src="Social Icons/tiktok.png" class="each_bottom_footer_logo" alt="tiktok" />
+            <img src="Social Icons/linkedin.png" class="each_bottom_footer_logo" alt="linkedin" />
+            <img src="Social Icons/insta.png" class="each_bottom_footer_logo" alt="insta" />
+          </div>
       </section>
     </div>
 
@@ -580,6 +584,32 @@
   });
 }
 
+
     </script>
+    <script>
+       
+
+$(document).ready(function() {
+  var popupVisible = false;
+  $('.material-symbols-outlined.menu').click(function() {
+    if (popupVisible) {
+      $('.popup-image').fadeOut();
+      popupVisible = false;
+    } else {
+      $('.popup-image').fadeIn();
+      popupVisible = true;
+    }
+  });
+
+  $(document).click(function(event) {
+    if (!$(event.target).closest('.navbar').length) {
+      $('.popup-image').fadeOut();
+      popupVisible = false;
+    }
+  });
+});
+    </script>
+        <script src="menu.js"></script>
+
   </body>
 </html>
