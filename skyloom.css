@@ -178,7 +178,7 @@ body {
 .landing_page .partners {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   row-gap: 2.5rem;
   column-gap: 7vw;
   height: 18.125rem;
@@ -219,14 +219,14 @@ body {
 
 .lets_talk .footer_title {
   position: absolute;
-  top: 60px;
-  right:40px;
-  left:40px;
+  top: -123px;
+  right: 40px;
+  left: 40px;
 }
 
 .lets_talk .footer_top {
   position: absolute;
-  top: 17.625rem;
+  top:5.625rem;
   height: fit-content;
   width: 100%;
   display: flex;
@@ -401,12 +401,12 @@ form #submit_btn {
   }
 
   .landing_page .partners {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
   }
  .contact_text,
  .footer_divs>.footer_text {
-   font-size: 3vw;
+   font-size: 1vw;
  }
  .each_contact .footer_icon {
    height: 20px;
@@ -727,8 +727,8 @@ form #submit_btn {
 }
 
 .each_bottom_footer_logo {
-  height: 2.125rem;
-  width: 44px;
+  height: 3.125rem;
+  width: 82px;
   margin-right: 10px; /* Adjust this value to control the gap between images */
 }
 

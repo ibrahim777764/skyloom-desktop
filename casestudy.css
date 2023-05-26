@@ -50,6 +50,9 @@
 
 .center_card_image {
   height: 600px;
+  
+  margin-left: -52px;
+
 }
 .card_block .yellow_spot {
   width: 600px;
