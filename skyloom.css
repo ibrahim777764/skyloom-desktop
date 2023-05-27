@@ -142,9 +142,9 @@ body {
 
 .each_service .service_icon {
   position: absolute;
-  left: -1.375rem;
-  top: -15rem;
-  height: 28.125rem;
+  left: 2.625rem;
+  top: -9rem;
+  height: 15.125rem;
   aspect-ratio: 1/1;
   object-fit: cover;
 }
@@ -179,8 +179,8 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  row-gap: 2.5rem;
-  column-gap: 7vw;
+  row-gap: 0.5rem;
+  column-gap: 16vw;
   height: 18.125rem;
 }
 
@@ -211,7 +211,7 @@ body {
 }
 .lets_talk .footer_img {
   width: 100vw;
-  height: 1350px;
+  height: 1085px;
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -219,7 +219,7 @@ body {
 
 .lets_talk .footer_title {
   position: absolute;
-  top: -123px;
+  top: -88px;
   right: 40px;
   left: 40px;
 }
@@ -305,7 +305,7 @@ form #submit_btn {
 
 .footer {
   position: relative;
-  margin-top: 752px;
+  margin-top: 593px;
   height: 18.75rem;
   width: 100vw;
   display: flex;
@@ -397,7 +397,8 @@ form #submit_btn {
 }
   
   .partners_logo {
-    width: 120px;
+    width: 137px;
+    height: 5.25rem;
   }
 
   .landing_page .partners {
@@ -440,7 +441,7 @@ form #submit_btn {
   }
 
   .partners_logo {
-    width: 100px;
+    width: 128px;
   }
 
   .services .services_block {
@@ -489,7 +490,7 @@ form #submit_btn {
   }
 
   .partners_logo {
-    width: 100px;
+    width: 128px;
   }
 
   /* .footer_divs>.footer_text {
@@ -697,7 +698,7 @@ form #submit_btn {
 
 @media screen and (min-width: 1024px) {
   .clients .clientlist {
-    column-gap: 40px;
+    column-gap: 75px;
   }
 }
 .each_from_section {
@@ -774,7 +775,7 @@ form #submit_btn {
 }
 
 .margin_util{
-margin-top: 75px;
+margin-top: -37px;
 margin-bottom: 75px;
 }
 
