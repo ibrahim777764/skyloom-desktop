@@ -103,7 +103,16 @@ body {
 
 .clients .title_row,
 .services .title_row,
-.partnerships .title_row,
+.partnerships .title_row {
+  user-select: none;
+  font-family: var(--primary-font), sans-serif;
+  text-transform: uppercase;
+  font-size: 3.75vw;
+  color: var(--bluish-color);
+  display: flex;
+  align-items: center;
+}
+
 .lets_talk .title_row {
   user-select: none;
   font-family: var(--primary-font), sans-serif;
@@ -120,6 +129,13 @@ body {
   justify-content: center;
   margin-top: -49px;
 }
+
+.div_center2 {
+  display: flex;
+  justify-content: center;
+  margin-top: -112px;
+  margin: 15px;
+}
 .services{
   padding:40px;
 }
@@ -131,11 +147,14 @@ body {
   row-gap: 50px;
   column-gap: 120px;
   color: white;
+  margin-left: 17px;
+  margin-right: 17px;
+  margin-top: 21px;
 }
 
 .services_block .each_service {
   border: 0.3125rem white solid;
-  height: 24.25rem;
+  height: 20.25rem;
   border-radius: 0.9375rem;
   position: relative;
 }
@@ -162,12 +181,14 @@ body {
 
 .service_body .service_title {
   font-family: var(--primary-font), sans-serif;
-  font-size: 2.2vw;
+  font-size: 1.2vw;
   color: white;
 }
 
 .service_body .service_description {
   font-family: "inter", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 
@@ -178,10 +199,13 @@ body {
 .landing_page .partners {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+
   grid-template-rows: repeat(4, 1fr);
   row-gap: 0.5rem;
-  column-gap: 16vw;
+  column-gap: 14vw;
   height: 18.125rem;
+  margin-left: 22px;
+
 }
 
 .client_logo,
@@ -191,7 +215,7 @@ body {
 
 
 .title {
-  margin-right: 30px;
+  margin-right: 26px;
 }
 
  .line {
@@ -202,17 +226,26 @@ body {
 }
 
 .line2 {
-  width: 61vw;
+  width: 59vw;
   height: 0.5rem;
   border-radius: 0.125rem;
   background-color: var(--bluish-color);
 }
 .line3 {
-  width: 74vw;
+  width: 70vw;
+  height: 0.5rem;
+  border-radius: 0.125rem;
+  background-color: var(--bluish-color);
+  margin-left: 12px;
+}
+
+.line4 {
+  width: 68.5vw;
   height: 0.5rem;
   border-radius: 0.125rem;
   background-color: var(--bluish-color);
 }
+
 /* Let's Talk  */
 .lets_talk {
   display: block;
@@ -250,7 +283,7 @@ body {
 
 .footer_top .lets_talk_img {
   margin-left: 0;
-  margin-top:10px;
+  margin-top:-87px;
   height: 31.25rem;
   aspect-ratio: 1/1;
   object-fit: cover;
@@ -323,7 +356,7 @@ form #submit_btn {
   width: 100vw;
   display: flex;
   justify-content: space-around;
-  margin-left: -118px;
+  margin-left: -80px;
 }
 
 .footer .footer_divs {
@@ -429,8 +462,8 @@ form #submit_btn {
    }
  
  .each_contact .footer_icon {
-   height: 20px;
-   width: 20px;
+  height: 14px;
+  width: 15px;
  }
 
 
@@ -738,7 +771,7 @@ form #submit_btn {
   height: 4.875rem;
   width: 8.875rem;
   object-fit: cover;
-  margin-left: -11px;
+  margin-left: 17px;
 }
 
 .bottom_footer_logo {
@@ -747,9 +780,9 @@ form #submit_btn {
 }
 
 .each_bottom_footer_logo {
-  height: 3.125rem;
-  width: 82px;
-  margin-right: 10px; /* Adjust this value to control the gap between images */
+  height: 2.125rem;
+  width: 61px;
+  margin-right: 8px;
 }
 
 
@@ -796,14 +829,28 @@ form #submit_btn {
 .margin_util{
 margin-top: -37px;
 margin-bottom: 75px;
+margin-left: 19px;
 
 }
 
 .margin_util2{
   margin-top: -37px;
   margin-bottom: 75px;
-  margin-left: -14px;
+  margin-left: -1px;
   
   }
+
+  .margin_util3{
+    margin-top: -37px;
+    margin-bottom: 75px;
+    margin-left: 21px;
+    
+    }
+    
   
 
+.white{
+  color: white;
+}
+.green {
+  color: var(--bluish-color);}
