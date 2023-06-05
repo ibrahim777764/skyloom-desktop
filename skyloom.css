@@ -219,7 +219,7 @@ body {
 }
 
  .line {
-  width: 71vw;
+  width: 70.5vw;
   height: 0.5rem;
   border-radius: 0.125rem;
   background-color: var(--bluish-color);
@@ -240,7 +240,7 @@ body {
 }
 
 .line4 {
-  width: 68.5vw;
+  width: 68vw;
   height: 0.5rem;
   border-radius: 0.125rem;
   background-color: var(--bluish-color);
