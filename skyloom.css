@@ -753,11 +753,17 @@ form #submit_btn {
     column-gap: 4%;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1405px) {
   .clients .clientlist {
     column-gap: 6%;
   }
 }
+@media screen and (min-width: 1406px) {
+  .clients .clientlist {
+    column-gap: 8%;
+  }
+}
+
 .each_from_section {
   margin-top: 0.5rem;
 }
