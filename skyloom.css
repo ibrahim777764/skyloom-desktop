@@ -220,7 +220,7 @@ body {
 
  .line {
   width: 79%;
-  height: 0.5rem;
+  height: 0.2em; /* Replace with a relative unit like % or em */
   border-radius: 0.125rem;
   background-color: var(--bluish-color);
 }
