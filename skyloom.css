@@ -88,9 +88,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 90%;
+  /* width: 90%; */
   padding: 40px 0;
-  margin: 0 5%;
+  /* margin: 0 5%; */
 }
 
 .clients .clientlist {
@@ -748,9 +748,14 @@ form #submit_btn {
 
 
 
+@media screen and (max-width: 720px) {
+  .clients .clientlist {
+    column-gap: 4%;
+  }
+}
 @media screen and (min-width: 1024px) {
   .clients .clientlist {
-    column-gap: 69px;
+    column-gap: 6%;
   }
 }
 .each_from_section {

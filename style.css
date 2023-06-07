@@ -1,0 +1,12 @@
+.body_class {
+    background-color: red;
+}
+.child_div {
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.parent_div{
+    padding-left: 5%;
+    padding-right: 5%;
+}
