@@ -134,7 +134,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: -112px;
-  margin: 15px;
+  margin: 31px;
 }
 .services{
   padding:40px;
@@ -403,7 +403,7 @@ form #submit_btn {
   height: 2.5rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px){
   .services .services_block {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 1fr);
