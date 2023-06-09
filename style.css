@@ -10,3 +10,13 @@
     padding-left: 5%;
     padding-right: 5%;
 }
+
+.child_div2 {
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.parent_div2 {
+    padding-left: 0%;
+    padding-right: 2%;
+}
